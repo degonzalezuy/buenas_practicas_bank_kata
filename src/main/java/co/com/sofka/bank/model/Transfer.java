@@ -1,31 +1,34 @@
 package co.com.sofka.bank.model;
 
-import java.time.LocalDateTime;
+import co.com.sofka.bank.values.AmountVO;
+import co.com.sofka.bank.values.DateVO;
+
+
 
 public class Transfer {
-    private String date;
-    private int amount;
+    private DateVO date;
+    private AmountVO amount;
     private String type;
 
-    public Transfer(String date, int amount, String type) {
+    public Transfer(DateVO date, AmountVO amount, String type) {
         this.date = date;
         this.amount = amount;
         this.type = type;
     }
 
-    public String getDate() {
+    public DateVO getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(DateVO date) {
         this.date = date;
     }
 
-    public int getAmount() {
+    public AmountVO getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(AmountVO amount) {
         this.amount = amount;
     }
 
